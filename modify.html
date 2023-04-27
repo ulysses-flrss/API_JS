@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Investigación Aplicada DSS</title>
+    <link rel="stylesheet" href="css/root-style.css">
+    <link rel="stylesheet" href="css/create-style.css">
+    <script src="js/consumirAPI.js"></script>
+</head>
+
+<body>
+
+    
+
+<form action="" method="post" enctype="multipart/form-data" id="form-datos  ">
+    <h1>Modificando </h1>
+    <div>
+        <label for="codigo_editorial">Codigo:</label>
+        <input readonly type="text" name="codigo_editorial" id="codigo_editorial" placeholder="EDI###" required maxlength="6">
+    </div>
+
+    <div>
+        <label for="nombre_editorial">Nombre:</label>
+        <input type="text" name="nombre_editorial" id="nombre_editorial" placeholder="Ej. Mi Editorial" required>
+    </div>
+
+    <div>
+        <label for="Edad">Contacto:</label>
+        <input type="text" id="contacto" name="contacto" placeholder="Ej. José Juan" required>
+    </div>
+
+    <div>
+        <label for="Salario">Telefono:</label>
+        <input type="text" id="telefono" name="telefono" placeholder="####-####" required>    
+    </div>
+
+
+    <div>
+        <input type="submit " onclick="updateData()" id="update-editorial" class="btn" name="submit" value="Guardar">
+
+    </div>
+
+    <script>showData()</script>
+</form>
+</body>
